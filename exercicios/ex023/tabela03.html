@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Tabelas</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -12,8 +12,12 @@
             font-size: 22px;
             border-collapse: collapse;
         }
-        th, td{
+        caption{
             border: 3px solid black;
+            
+        }
+        th, td{
+            border: 3px solid black; 
             padding: 10px;
             text-align: left;
         
@@ -24,14 +28,15 @@
     </style>
 </head>
 <body>
-    <h1>Tabela mais elaborada</h1>
+    <h1>Colocando Caption e escopo</h1>
     <table>
         <thead>
-            <th>Cia Aérea</th>
-            <th>Horário</th>
-            <th>Preço</th>
+            <th scope="col">Cia Aérea</th>
+            <th scope="col">Horário</th>
+            <th scope="col">Preço</th>
         </thead>
         <tbody>
+            <caption>Horário e preço dos voos</caption>
             <tr>
                 <td>Latam</td>
                 <td class="horario";>11:00</td>
@@ -60,12 +65,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td></td>
                 <td class="dinheiro">R$1050</td>
             </tr>
         </tfoot>
     </table>
-    
 </body>
 </html>
+        
+    
+    
