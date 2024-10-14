@@ -1,105 +1,106 @@
-<body>
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
         }
         table{
-            font-size: 22px;
+            width: 500px;
             border-collapse: collapse;
-            display: relative;
-            text-align: center;
-            margin: auto;
         }
         caption{
-            border: 3px solid black;
-            
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
         }
         th, td{
-            border: 3px solid black; 
-            padding: 10px;
-            text-align: left;
+            border: 1px solid black;
+            padding-inline: 8px;
+        } 
+        col.cnome{
+            background-color: aqua;
         }
-        thead{
-            position: sticky;
-            top: 0;
-            border: 3px solid rgb(255, 255, 255);
-            color: aliceblue;
-            background-color: black;
-
+        .csexo{
+            background-color: blueviolet;
         }
-        tbody tr:nth-child(2n){
-            background-color: gray;
-
-        }
-        .dinheiro, .horario{
-            text-align: right;
-        }
-        .bis{
-            background-color: ;
+        .cidade{
+            background-image: linear-gradient(to right, red,blue);
         }
     </style>
 </head>
 <body>
-    
-    <h1 style="text-align: center;">Cabeçalho fixo e efeito zebrado</h1>
-    <colgroup>
-        <col class="bis">
-        <col class="">
-        <col class=""> 
-        
-    </colgroup>
     <table>
-        <thead>
-            <th scope="col">Cia Aérea</th>
-            <th scope="col">Horário</th>
-            <th scope="col">Preço</th>
-        </thead>
-        <tbody>
-            <caption>Horário e preço dos voos</caption>
-            <tr>
-                <td>Latam</td>
-                <td class="horario";>11:00</td>
-                <td class="dinheiro">R$200</td>
-            </tr>
-    
-            <tr>
-                <td>Gol</td>
-                <td class="horario";>11:15</td>
-                <td class="dinheiro">R$220</td>
-            </tr>
-            <tr>
-                <td>Azul</td>
-                <td class="horario";>11:20</td>
-                <td class="dinheiro">R$210</td>
-            </tr>
-            <tr>
-                <td>Gol</td>
-                <td class="horario">12:40</td>
-                <td class="dinheiro">R$205</td>
-            </tr>
-            <tr>
-                <td>Latam</td>
-                <td class="horario";>12:45</td>
-                <td class="dinheiro">R$215</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total</th>
-                <td></td>
-                <td class="dinheiro">R$1050</td>
-            </tr>
-        </tfoot>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade" span="2">
+
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
     </table>
+</body>
+</html>
